@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "reactbasic",
+=======
+  "name": "my01_project",
+>>>>>>> e678f5fcf9eacc919e6abb99da1240805724dcaa
   "private": true,
   "version": "0.0.0",
   "type": "module",

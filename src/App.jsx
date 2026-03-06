@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -20,6 +21,15 @@ function App() {
       display? <User /> : null
         //conditional rendering using ternary operator //hide and show component using state
     }
+=======
+import './TODOcomponent.css' 
+import TODOcomponent from './TODOcomponent'
+function App() {
+  
+  return (
+    <>
+    <TODOcomponent />
+>>>>>>> e678f5fcf9eacc919e6abb99da1240805724dcaa
     </>
   )
 }
