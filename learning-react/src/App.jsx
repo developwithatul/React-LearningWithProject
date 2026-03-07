@@ -1,34 +1,40 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import User from "./User"
 
 function App() {
-  const [count, setCount] = useState(0)
+  // let UserName = "Rhul yadve" ;
+  // let Age ="25";
+  // let Email = "rahul234@gmail.com"
+  
+  // use object  ,,how to access
+  let usersDetails = {
+  name : "Rahul Yadve",
+  age : "25",
+  email : "rahul234@gmail.com"
+};
+let userDetails2 = {
+  name : "Atul Kumar Chakrawarti",
+  age : "24",
+  email : "chakrawartiatul654@gmail.com"
+};
+let userDetails3 = {
+  name : "Atul Chakrawarti",
+  age : "24",
+  email : "chakrawartiatu654@gmail.com"
+};
+console.log(usersDetails)
+console.log(userDetails2)
+console.log(userDetails3)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+       <h1>hello learning react-APP </h1> <hr />
+       {/* <User name = "Atul Kumar Chakrawarti " age ="24" email ="chakrawartiatul654@gmail.com" /> */}
+       {/* <User name={UserName} age= {Age} email ={Email}/> */}
+        <User users ={usersDetails}/> <hr />
+        <User users ={userDetails2}/> <hr />
+        <User users ={userDetails3}/> <hr />
+    </div>
   )
 }
 
