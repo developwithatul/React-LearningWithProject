@@ -5,7 +5,7 @@ function User ( {users}){
 
           <h2>Name: {users.name}</h2>
           <h2>Age: {users.age}</h2>
-          <h2>Email: {users.email}</h2> <hr />
+          <h2>Email: {users.email}</h2> 
           
     </div> 
 

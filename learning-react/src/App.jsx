@@ -1,7 +1,20 @@
 import { useState } from 'react'
 import User from "./User"
+import LoginButton from './Component/LoginButton'
+import LogOut from './Component/LogOut';
 
 function App() {
+
+  const [isLoggedIn, setIsLoggedIn] = useState('');
+
+
+  // if(isLoggedIn){
+  //   return <LogOut />
+  // }else{
+  //   return <LoginButton />
+  // }
+ // up side use condition rendering using if else statement but we can also use ternary operator for condition rendering
+
   // let UserName = "Rhul yadve" ;
   // let Age ="25";
   // let Email = "rahul234@gmail.com"
@@ -33,7 +46,10 @@ console.log(userDetails3)
        {/* <User name={UserName} age= {Age} email ={Email}/> */}
         <User users ={usersDetails}/> <hr />
         <User users ={userDetails2}/> <hr />
-        <User users ={userDetails3}/> <hr />
+        <User users ={userDetails3}/>
+       <br /><hr /><h1 style={ { color: "red", backgroundColor: "yellow"}}>Welcome to learning Condition rendering </h1> <hr />
+       <LoginButton />
+       <LogOut />
     </div>
   )
 }
