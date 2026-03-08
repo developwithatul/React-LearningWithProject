@@ -1,0 +1,13 @@
+.container img{
+    width : 300px;
+    height: 300px;
+}
+.container button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
